@@ -30,7 +30,7 @@ const QUESTIONS = [
     a: "Meg kell kérdezni, hogy miben segíthetek",
   },
   {
-    q: "Mi az a hobbid, amit Dóri támogat, de valójában mindig keresztbe tesz neki?",
+    q: "Mi az a hobbija Dórinak, amit Tomi támogat, de valójában mindig keresztbe tesz neki?",
     type: "text",
     a: "Olvasás",
   },
