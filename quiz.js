@@ -15,19 +15,9 @@ const QUESTIONS = [
     a: "8",
   },
   {
-    q: "Melyik az a terhelő kép rólad Tomi, amit ha egy másik lány meglátna, nem engedne be a hálószobába?",
-    type: "image",
-    a: "images/pizsama.jpg",
-  },
-  {
     q: "Mi az első kép Dóri telefonjában rólad?",
     type: "image",
     a: "images/iqos.jpg",
-  },
-  {
-    q: "Dóri, mi az a szokásod, amiről Tomi azt hiszi, hogy majd leszoksz róla az esküvő után?",
-    type: "text",
-    a: "Elfbar",
   },
   {
     q: "Utánozd a párod legviccesebb tipikus mondatait!",
@@ -53,6 +43,11 @@ const QUESTIONS = [
     q: "Ha Dóri választana magának egy „munkaruhát” egy pajzán estére, az mi lenne?",
     type: "text",
     a: "Diáklány",
+  },
+  {
+    q: "Melyik az a terhelő kép rólad Tomi, amit ha egy másik lány meglátna, nem engedne be a hálószobába?",
+    type: "image",
+    a: "images/pizsama.jpg",
   },
   {
     q: "Mi az a dolog, amit részegen csinál Dóri, de józanon elítél?",
