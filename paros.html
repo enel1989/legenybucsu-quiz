@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tomi szerint… — Dóri kvíze</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="lanybucsu.css" />
+  </head>
+  <body>
+    <div class="bg-blobs" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+      <span class="blob blob-4"></span>
+    </div>
+    <div class="sparkles" aria-hidden="true">
+      <span class="sparkle s1">✿</span>
+      <span class="sparkle s2">❀</span>
+      <span class="sparkle s3">✿</span>
+      <span class="sparkle s4">❁</span>
+      <span class="sparkle s5">❀</span>
+    </div>
+
+    <main class="stage">
+      <section id="screen-intro" class="screen active">
+        <div class="intro-card">
+          <p class="kicker">Páros kvíz</p>
+          <h1><em>Tomi szerint…</em> <span class="script">mit mondanál?</span></h1>
+          <p class="lead">
+            20 kérdés a kapcsolatotokról — minden választ Tomi adott.
+            Te tippelj, a lányok szurkolnak, aztán kiderül, mit gondol
+            rólad (és magatokról).
+          </p>
+          <button id="start-btn" class="btn btn-primary">
+            <span>Kezdjük!</span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="screen-quiz" class="screen">
+        <div class="card">
+          <div class="card-head">
+            <span class="pill" id="progress">1 / 20</span>
+            <span class="pill pill-muted">Tomi szerint…</span>
+          </div>
+          <h2 id="question" class="question">…</h2>
+          <div id="answer" class="answer" aria-live="polite"></div>
+          <div class="card-foot">
+            <button id="action-btn" class="btn btn-primary" data-mode="reveal">
+              Felfedés
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-finish" class="screen">
+        <div class="finish-card">
+          <p class="kicker">Vége a kvíznek</p>
+          <h1>Egészségedre, <em>Dóri!</em> 💍</h1>
+          <p class="lead">
+            Tomi fejében is ott vagy — most már hivatalosan is. 💕
+          </p>
+          <button id="restart-btn" class="btn btn-ghost">Újra</button>
+        </div>
+        <div id="confetti" class="confetti" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <script src="paros.js"></script>
+  </body>
+</html>
