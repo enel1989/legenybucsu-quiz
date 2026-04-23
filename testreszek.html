@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Testrész-kvíz — Tomi</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="testreszek.css" />
+  </head>
+  <body>
+    <div class="bg-blobs" aria-hidden="true">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+    </div>
+
+    <main class="stage">
+      <section id="screen-intro" class="screen active">
+        <div class="intro-card">
+          <p class="kicker">Testrész-kvíz</p>
+          <h1>Melyik <em>Dórié</em>?</h1>
+          <p class="lead">
+            6 testrész, mindegyikhez 3 fotó — Dóri, Kriszti és Zsuzsi.
+            Tomi, válaszd ki, melyik a feleséged! Azonnal kiderül a helyes
+            megfejtés.
+          </p>
+          <button id="start-btn" class="btn btn-primary">
+            <span>Kezdjük!</span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </div>
+      </section>
+
+      <section id="screen-quiz" class="screen">
+        <div class="card">
+          <div class="card-head">
+            <span class="pill" id="progress">1 / 6</span>
+            <span class="pill pill-muted">Dóri / Kriszti / Zsuzsi</span>
+          </div>
+          <p id="part-label" class="part-label">…</p>
+          <div id="choices" class="choices"></div>
+          <p id="feedback" class="feedback"></p>
+          <div class="card-foot">
+            <button id="next-btn" class="btn btn-primary hidden">
+              Következő
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-finish" class="screen">
+        <div class="finish-card">
+          <p class="kicker">Vége a kvíznek</p>
+          <p class="final-score" id="score">… / …</p>
+          <h1><em>Egészségedre!</em></h1>
+          <p class="lead" id="finish-lead">…</p>
+          <button id="restart-btn" class="btn btn-ghost">Újra</button>
+        </div>
+        <div id="confetti" class="confetti" aria-hidden="true"></div>
+      </section>
+    </main>
+
+    <script src="testreszek.js"></script>
+  </body>
+</html>
